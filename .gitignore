@@ -1,0 +1,7 @@
+ivy_lib/*
+lib/*
+*.class
+*.classpath
+target/*
+*.log
+.ivy2/*
