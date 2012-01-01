@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://www.accelerato.rs/techstars/apply/application_id:405755 -->
+<html lang="en" class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" async="" id="gauges-tracker" data-site-id="4ef22380613f5d7bd100000d" src="track.js"></script><script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()])</script>
+ 
+        <link href="http://www.accelerato.rs/favicon.ico" type="image/x-icon" rel="icon"><link href="http://www.accelerato.rs/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" type="text/css" href="960gs.css">    <!--<base href="/">--><base href=".">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined')
+        {
+            document.write(unescape("%3Cscript src='js/jquery-1.6.2.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+
+        $(document).ready(function () {
+            // For getting the baseurl.  Otherwise ajax calls get screwed up by relative paths
+            //      Usage:  $('#foo').get($.baseurl('/posts/index'));
+            $.baseurl = function(url) {
+                return $('base').attr('href')+url;
+            };
+        });
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    
+<!--     <script type="text/javascript" src="http://use.typekit.com/rsu7wpm.js"></script> -->
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Accelerators</title>
+   
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    
+    
+</head>
+<body marginwidth="0" marginheight="0">
+<!-- Warning for IE7 and below -->
+<!--[if lte IE 7]>
+    <style type="text/css">
+        #ie6msg{border:3px solid #c33; margin:8px 0; background:#fcc; color:#000;}
+        #ie6msg h4{margin:8px; padding:0;}
+        #ie6msg p{margin:8px; padding:0;}
+        #ie6msg p a.getie7{font-weight:bold; color:#006;}
+        #ie6msg p a.ie6expl{font-weight:bold; color:#006;}
+    </style>
+    <div id="ie6msg">
+        <h4>You are using an unsupported browser.</h4>
+        <p>Please upgrade your browser to a newer version of Internet Explorer. </p>
+        <p>You could also try some other popular browsers like <a class="ie6expl" href="http://mozilla.com">FireFox</a> or <a class="ie6expl" href="http://www.google.com/chrome">Chrome</a>.</p>
+        <p>(At least we didn't say <a href="http://www.thedonutproject.com/inspiration/overly-judgemental-ie6-splash-pages/">this</a>)
+    </div>
+<![endif]-->
+<div id="container" class="container_12">
+	<div class="grid_12">
+        <header id="banner" role="banner" class="whole">
+        		        			<a href="http://www.techstars.com/" target="_top">
+                        <img src="techstars_logo_logo.png" class="logo" alt="">                    </a>
+                                            <div class="techstars_network_tagline">&nbsp;</div>
+                                                    <div class="right clearfix">
+                    <div class="upper">
+                    	                    		<div id="welcome">
+                                                                            Welcome, Kranthi.&nbsp;&nbsp;&nbsp;<a href="http://www.accelerato.rs/users/logout">Logout</a>                                                    		</div>
+                    		<br><br>
+                			<!-- End login bar container -->
+                		                    </div>
+                    <nav>
+                        <a href="http://www.accelerato.rs/applications" class="selected">View My Applications</a><a href="http://www.accelerato.rs/users/edit/4148" class="">My Account</a><a href="http://www.accelerato.rs/contact/accelerators" class="">For Accelerators</a>                    </nav>
+                </div>
+    	</header>
+    </div>
+    <div class="clear"></div>
+
+		
+	<section class="content">
+		
+		    <div class="global">
+		        <div class="grid_12">
+		            		        </div>
+		        <div class="clear"></div>
+		
+				<div class="grid_12">
+		        	<script type="text/javascript" src="jquery.validate.min.js"></script><script type="text/javascript" src="charCount.js"></script>
+<script>
+$(document).ready(function() {
+    // Validate application form
+    $("#application").validate({
+        submitHandler: function(form) {
+            // Hide submit box on click
+            $("#buttons").hide();
+            $("#loading").show();
+            form.submit();
+        }
+    });
+
+    // Grey out secondary location if chosen as Primary location
+    $("#ApplicationPrimaryLocation").change(function() {
+        $('input:checkbox').removeAttr('disabled');
+        selected = $(this).val();
+        checkbox_id = "#ApplicationSecondaryLocations" + selected.replace(/ /g,'');
+        $(checkbox_id).attr("disabled", true);
+    });
+
+    $("#row_submit").hover(
+	  function() { $('#help_submit').toggle(); }
+	);
+	
+	$("#row_draft").hover(
+	  function() { $('#help_draft').toggle(); }
+	);
+    
+    $("#Answer0Content").charCount({
+			allowed: 140,		
+			warning: 20,
+			counterText: 'Characters left: '});
+});
+</script>
+<div class="grid_1">&nbsp;</div>
+<div id="apply" class="grid_10">
+    <div class="tipmsg">
+                    Apply early!  You can add additional information at any time.
+            </div>
+<form id="application" title="Apply to TechStars" subtitle="Get in there!" method="post" action="http://www.accelerato.rs/applications/add/405755" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="PUT"></div>        <div class="input text"><label for="ApplicationPrimaryLocation">First Choice Location:</label><select name="data[Application][primary_location]" class="required" id="ApplicationPrimaryLocation">
+<option value=""></option>
+<option value="Boulder">Boulder</option>
+<option value="Boston">Boston</option>
+<option value="NYC" selected="selected">NYC</option>
+<option value="Seattle">Seattle</option>
+<option value="Cloud">Cloud</option>
+</select><br><br><fieldset><legend>Second Choice Locations (<a href="http://techstars.com/program/locations/" style="float:none" target="_blank">Learn more</a>):</legend><input type="hidden" name="data[Application][secondary_locations]" value="" id="ApplicationSecondaryLocations">
+
+<div class="checkbox"><input type="checkbox" name="data[Application][secondary_locations][]" value="Boulder" id="ApplicationSecondaryLocationsBoulder"><label for="ApplicationSecondaryLocationsBoulder">Boulder</label></div>
+<div class="checkbox"><input type="checkbox" name="data[Application][secondary_locations][]" value="Boston" id="ApplicationSecondaryLocationsBoston"><label for="ApplicationSecondaryLocationsBoston">Boston</label></div>
+<div class="checkbox"><input type="checkbox" name="data[Application][secondary_locations][]" value="NYC" id="ApplicationSecondaryLocationsNYC"><label for="ApplicationSecondaryLocationsNYC">NYC</label></div>
+<div class="checkbox"><input type="checkbox" name="data[Application][secondary_locations][]" value="Seattle" id="ApplicationSecondaryLocationsSeattle"><label for="ApplicationSecondaryLocationsSeattle">Seattle</label></div>
+<div class="checkbox"><input type="checkbox" name="data[Application][secondary_locations][]" value="Cloud" id="ApplicationSecondaryLocationsCloud"><label for="ApplicationSecondaryLocationsCloud">Cloud</label></div>
+</fieldset></div><div class="input text"><label for="ApplicationName">What is the name of your company?</label><input name="data[Application][name]" type="text" class="required" maxlength="255" value="Sindeo" id="ApplicationName"></div><input type="hidden" name="data[Application][id]" value="405755" id="ApplicationId"><div class="input textarea"><label for="Answer0Content">Please describe your business in 140 characters or less.</label><textarea name="data[Answer][0][content]" class="required" cols="30" rows="6" id="Answer0Content">A sharepoint like site, but focused only on knowledge sharing, by bringing structure and definition to the folksonomy.
+</textarea><span class="counter">Characters left: 21</span></div><input type="hidden" name="data[Answer][0][id]" value="29393" id="Answer0Id"><input type="hidden" name="data[Answer][0][question_id]" value="4" id="Answer0QuestionId"><div class="input textarea"><label for="Answer1Content">In more detail, what will your company do or make?  What's new, interesting, or different about what your company will do? </label><textarea name="data[Answer][1][content]" class="required" cols="30" rows="6" id="Answer1Content">Sindeo is a SaaS based knowledge management product with three primary features: 
+1) Capture, share and disseminate content, in a defined and structured setting using tag bundles, rating and recommendation engines
+2) Form communities around people, projects and interests.
+3) Build libraries of learning maps, tutorials, how to guides, process flow.
+
+For an enterprise, Sindeo offers features such as API programmability and integration into existing Content/Data management (CMS/DMS) and project management systems.
+
+Sindeo takes the best elements of Sharepoint, social platforms and other CMS/DMS and makes it intuitive for any average group of individuals to share and organize knowledge. 
+
+Most teams have a few basic needs (1) seek information as well as the context of the information (2) collaborate with members in the group on building a knowledge base that ties to specific business needs (3) need data protection (4) need affordable solution.
+
+
+Sindeo serves all these needs without using multiple tools and doesn't need any babysitting. Sindeo makes capturing and organizing of information effortless through browser extensions.
+
+
+
+
+
+
+</textarea></div><input type="hidden" name="data[Answer][1][id]" value="29394" id="Answer1Id"><input type="hidden" name="data[Answer][1][question_id]" value="8" id="Answer1QuestionId"><div class="input textarea"><label for="Answer2Content">If you have a website or demo/prototype, what's the URL?  Please provide username and password if necessary.</label><textarea name="data[Answer][2][content]" class="required" cols="30" rows="6" id="Answer2Content">www.sindeo.me</textarea></div><input type="hidden" name="data[Answer][2][id]" value="29395" id="Answer2Id"><input type="hidden" name="data[Answer][2][question_id]" value="5" id="Answer2QuestionId">        <fieldset><legend>Business Video</legend><div class="input text"><label for="ApplicationVideoUrl">Please provide a video &lt; 3 minutes long which best describes your <strong>business</strong>.  Production value is not important to us, it can be quick and dirty.</label><input name="data[Application][video_url]" type="text" class="url" maxlength="1027" value="" id="ApplicationVideoUrl"></div><div class="input text"><label for="ApplicationVideoInformation">If a password or other information is needed to access the video, please provide it here.</label><input name="data[Application][video_information]" type="text" maxlength="2048" value="" id="ApplicationVideoInformation"></div></fieldset>
+        <br><br>
+        <fieldset><legend>Team Video</legend><div class="input text"><label for="ApplicationTeamVideoUrl">Please provide a video &lt; 3 minutes long which best describes your <strong>team</strong>.  Production value is not important to us, it can be quick and dirty.</label><input name="data[Application][team_video_url]" type="text" class="url" maxlength="2048" value="" id="ApplicationTeamVideoUrl"></div><div class="input text"><label for="ApplicationTeamVideoInformation">If a password or other information is needed to access the video, please provide it here.</label><input name="data[Application][team_video_information]" type="text" maxlength="2048" value="" id="ApplicationTeamVideoInformation"></div></fieldset><div class="input textarea"><label for="Answer3Content">Explain how the company will make money.</label><textarea name="data[Answer][3][content]" class="required" cols="30" rows="6" id="Answer3Content">The current plan is to use a Freemium approach where 5 users and 2GB storage get free access and charge
+additional thereafter based on number of users and storage needs (perhaps $50/month for 20 users and 20G storage). Many businesses or groups already pay for solutions that are focused more on content and data management rather than knowledge management. There will be tiered pricing for business accounts that need more users, larger storage, integration into existing extranets and intranets. The enterprise version will at a premium and could be on the company's network as opposed to a private cloud.
+</textarea></div><input type="hidden" name="data[Answer][3][id]" value="29396" id="Answer3Id"><input type="hidden" name="data[Answer][3][question_id]" value="10" id="Answer3QuestionId"><div class="input textarea"><label for="Answer4Content">Please provide information on current or likely competitors. Include key differentiators.  Please include URLs.</label><textarea name="data[Answer][4][content]" class="required" cols="30" rows="6" id="Answer4Content">Knowledge Plaza: Knowledge Management (outside of US), has a bad UI and works on 
+Yammer, Socialtext: Social Networking. These involved some level of knowledge management but are heavily focused on social aspects. Social aspects such as sharing, collaborative filtering, feedback and recommendations are seen as goal in itself, rather than effective transformation of tacit knowledge into explicit knowledge.
+Enterprise level customization platforms: Sharepoint, Liferay, Alfresco : These are heavy weight platforms that require extensive customization, need an IT team, costly professional assistance,
+
+Competing products are heavily focused on social aspects of information sharing, suffer from feature bloat ,are expensive to setup or need a professional services group for maintaining the knowledge management system.  
+
+</textarea></div><input type="hidden" name="data[Answer][4][id]" value="29397" id="Answer4Id"><input type="hidden" name="data[Answer][4][question_id]" value="9" id="Answer4QuestionId"><div class="input textarea"><label for="Answer5Content">Please tell us about each founder and their role.  Explain how you met and how long you've been working together. Please be thorough because we place a great deal of importance on the team.  Include LinkedIn and Github URLs (if any).</label><textarea name="data[Answer][5][content]" class="required" cols="30" rows="6" id="Answer5Content">Kranthi Pinjala, Founder &amp; CEO: Responsible for product management, strategy, business development and finance. Several years of project management and product development experience at a technology firm. Currently a business valuation consultant and recent graduate of NYU Stern School of Business.
+
+Saikiran Yerram, Founder &amp; CTO: Responsible for building the Sindeo platform, Technologist with broad experience in all aspects of software development, product hosting, and infrastructure design/maintenance.
+Previous experience working on a successful knowledge management tool for financials services sector, experience in revo......
+
+Chris Hues, Founder &amp; Developer:
+
+
+The founders are friends and have known each other for several years and working on Sindeo together for 6 months.</textarea></div><input type="hidden" name="data[Answer][5][id]" value="29398" id="Answer5Id"><input type="hidden" name="data[Answer][5][question_id]" value="11" id="Answer5QuestionId"><div class="input textarea"><label for="Answer6Content">What are some things that the team (or its members) have built in the past? Please include URLs.</label><textarea name="data[Answer][6][content]" class="required" cols="30" rows="6" id="Answer6Content">Saikiran Yerram :Supra, Revo
+Chris Hues: Andriod stuff or other work related stuff
+</textarea></div><input type="hidden" name="data[Answer][6][id]" value="29399" id="Answer6Id"><input type="hidden" name="data[Answer][6][question_id]" value="12" id="Answer6QuestionId"><div class="input textarea"><label for="Answer7Content">Can each of the founders attend the entirety of the program, or do some of you have other obligations during the timeframe of the program?  If not, please explain.</label><textarea name="data[Answer][7][content]" class="required" cols="30" rows="6" id="Answer7Content">Yes, all the founders can attend the entirety of the program.</textarea></div><input type="hidden" name="data[Answer][7][id]" value="29400" id="Answer7Id"><input type="hidden" name="data[Answer][7][question_id]" value="13" id="Answer7QuestionId"><div class="input textarea"><label for="Answer8Content">Not including the founders, how many additional employees are there?  Please provide LinkedIn profiles and Github URLs (if applicable).</label><textarea name="data[Answer][8][content]" class="required" cols="30" rows="6" id="Answer8Content">No other additional employees</textarea></div><input type="hidden" name="data[Answer][8][id]" value="29401" id="Answer8Id"><input type="hidden" name="data[Answer][8][question_id]" value="3" id="Answer8QuestionId"><fieldset><legend>Where is your company located?</legend><div class="input text"><label for="ApplicationCity">City</label><input name="data[Application][city]" type="text" class="required" maxlength="255" value="New York" id="ApplicationCity"></div><div class="input text"><label for="ApplicationState">State/Province</label><input name="data[Application][state]" type="text" class="required" maxlength="255" value="NY" id="ApplicationState"></div><div class="input text"><label for="ApplicationCountry">Country</label><input name="data[Application][country]" type="text" class="required" maxlength="255" value="USA" id="ApplicationCountry"></div><div class="input text"><label for="ApplicationPhone">Phone number</label><input name="data[Application][phone]" type="text" maxlength="20" value="617-388-6741" id="ApplicationPhone"></div></fieldset><div class="input textarea"><label for="Answer9Content">Please provide information on money the company has already raised, and any information on fundraising plans for the future.</label><textarea name="data[Answer][9][content]" class="required" cols="30" rows="6" id="Answer9Content">The company is self funded now and is planning to raise angel or VC financing over the next 6 months.</textarea></div><input type="hidden" name="data[Answer][9][id]" value="29402" id="Answer9Id"><input type="hidden" name="data[Answer][9][question_id]" value="16" id="Answer9QuestionId"><div class="input textarea"><label for="Answer10Content">Why should we choose your company?</label><textarea name="data[Answer][10][content]" class="required" cols="30" rows="6" id="Answer10Content">Customers (professionals or businesses) use intranet or extranet tools that emphasize on data, content management or social networking, rather than knowledge management. The result is redundant content, exponential file storage, endless searches and tags. Customer is unable to find relevant information in timely manner. Most tools available are enterprise editions and require heavy customizations to achieve true knowledge sharing. 
+
+Customers use flat searches, personal categorizations and mass messaging. In addition, customers use multiple tools to accomplish knowledge sharing.
+
+Sindeo solves the customer's pain point. It is only focused on Knowledge Management. Competitors are focused on packing too many collaborative features into one product, or focused towards social networking, or offer do-it-yourself R&amp;D projects
+Sindeo is SaaS based, so no over-head IT costs
+Entire functionality of Knowledge management done in less than 10 web pages, compared to others who have 100+ pages/features
+Non-invasive administration, No complex customization or administration of users required
+Minimal training due to highly intuitive and context based help. Plus video tutorials and user discussions
+</textarea></div><input type="hidden" name="data[Answer][10][id]" value="29403" id="Answer10Id"><input type="hidden" name="data[Answer][10][question_id]" value="14" id="Answer10QuestionId"><div class="input textarea"><label for="Answer11Content">Please list any TechStars mentors or past founders that you know personally (if any).</label><textarea name="data[Answer][11][content]" cols="30" rows="6" id="Answer11Content">Soraya</textarea></div><input type="hidden" name="data[Answer][11][id]" value="29404" id="Answer11Id"><input type="hidden" name="data[Answer][11][question_id]" value="17" id="Answer11QuestionId"><div class="input textarea"><label for="Answer12Content">How did you hear about TechStars?</label><textarea name="data[Answer][12][content]" cols="30" rows="6" id="Answer12Content">Introduction by Boston Harbor Angels and other entreprenuers</textarea></div><input type="hidden" name="data[Answer][12][id]" value="29405" id="Answer12Id"><input type="hidden" name="data[Answer][12][question_id]" value="18" id="Answer12QuestionId"><input type="hidden" name="data[Application][accelerator_id]" value="4" id="ApplicationAcceleratorId">
+        
+        <div id="save_buttons">
+            <table>
+                <tbody><tr id="row_draft">
+                    <td style="border-bottom-width: 0px;"><input name="application_draft" id="draft" type="submit" class="cancel" value="Save Draft">
+                        <span id="help_draft" style="display: none; ">You can edit your draft as many times as you'd like, and submit it when you're ready</span>
+                    </td>
+                </tr><tr id="row_submit">
+                    <td style="border-bottom-width: 0px;"><input name="application_submit" id="submit" type="submit" value="Submit Application">
+                        <span id="help_submit" style="display: none; ">Once submitted, you can still add notes at any time. Submitting early increases your chances of acceptance.</span>
+                    </td>
+            </tr></tbody></table>
+        </div>
+        <img id="loading" src="loading.gif" style="display: none">
+
+        </form>
+    </div>
+<div class="grid_1">&nbsp;</div>
+<div class="clear"></div>
+		       	</div>
+		        <div class="clear"></div>
+			</div>	    
+		
+	</section>
+	<!-- End content container -->
+
+
+	<footer>
+        <div class="global">
+        	            <h2>The Unified Seed Accelerator Application is powered by the Kauffman Foundation and powered by TechStars.</h2>
+        </div>
+	</footer>
+	 </div>   
+
+<!--[if lt IE 7 ]>
+<script src="js/libs/dd_belatedpng.js"></script>
+<script> DD_belatedPNG.fix('img, .png_bg');</script>
+<![endif]-->
+<script type="text/javascript" src="script.js"></script><script type="text/javascript">
+
+			// Techstars Google Analytics
+	  	 var _gaq = _gaq || [];
+		 _gaq.push(['_setAccount', 'UA-26864119-1']);
+		 _gaq.push(['_trackPageview']);
+		
+		 (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		 })();
+		
+</script>
+<!-- Gaug.es Tracking -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4ef22380613f5d7bd100000d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+<!-- Page stats:  applications/index Peak memory usage: 22.31% Used: 7,310,480 Memory limit: 32M URL: http://www.accelerato.rs/techstars/apply/application_id:405755 Elapsed time: 1.2 sec. -->
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/27/eum/rum-staging.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","b76ab6192b",219431,"b1xaMENUWkJRBk1bX1YWeQdFXFtfHyRaUVVUXEoFRVpGQnMKV0ZCV1VUAUMaVUFACUA=",0,190,new Date().getTime()])</script>
+ 
+<script type="text/javascript" async="" src="rum-staging.js"></script><script id="nreum-send-beacon" type="text/x-nreum-data"></script></body></html>
