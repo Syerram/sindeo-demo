@@ -1,0 +1,15 @@
+<html>
+	<body>
+		{% if usr_emails %}
+			<p>Found {{ usr_emails|length}}</p>
+			<ul>
+				{% for usr_email in usr_emails %}
+				<li>{{usr_email.email}}-{{usr_email.subscribed}}</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>no emails match</p>
+		{% endif %}
+	</body>
+
+</html>
