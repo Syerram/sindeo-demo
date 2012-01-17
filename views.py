@@ -1,5 +1,6 @@
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
+from django.utils import simplejson
 import datetime
 from launch.models import UserEmails
 from launch.forms import UserEmailsForm
@@ -10,14 +11,16 @@ def landing_page(request):
 
 def subscribe(request):
 	form = UserEmailsForm(request.POST)
+	json={}
 	if form.is_valid():
 		cleaned_up_form = form.cleaned_data
-		print form.cleaned_data
 		usrEmlMdl = UserEmails(email=cleaned_up_form['email'], feedback=cleaned_up_form['feedback'], subscribed=True)
 		usrEmlMdl.save()
-		return HttpResponseRedirect('/subscribe/thanks/')
+		json = simplejson.dumps({'subscribe_success': True, 'mesg': 'Thanks for subscribing. see ya soon!'},)
 	else:
-		return render_to_response('landing_page.html', {'form': form})		
+		print form.errors 
+		json = simplejson.dumps({'subscribe_success':False, 'errors': dict(form.errors.items()),})
+	return HttpResponse(json, mimetype='application/json')		
 def thanku(request):
 	return render_to_response('thanku.html')
 

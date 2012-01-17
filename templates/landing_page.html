@@ -1,20 +1,107 @@
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/sindeo.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="/static/s.ico"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<title>Sindeo - Landing Page</title>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var form=jQuery('#subscribe');		
+			form.submit(function(e) {
+				jQuery('#success_mesg').hide();
+                                jQuery('#warning_mesg').hide();
+				jQuery.ajax({
+					data: $(this).serialize(),
+					type: $(this).attr('method'),
+					url: '/subscribe/',
+					success: function(response) {
+						if(response.subscribe_success) {
+							jQuery('#success_raw').html(response.mesg);
+							jQuery('#success_mesg').show();
+						} else {
+							var errors=[];
+							var ul = jQuery('#warning_raw');
+							ul.empty();
+							jQuery.each(response.errors, function(key, value) {
+								errors.push('<li>'+ key + ': ' + value + '</li>');
+							});
+							ul.append(errors.join(''));
+                                                        jQuery('#warning_mesg').show();	
+						}
+					}
+				});
+			return false;			
+			});
+			jQuery('#reset_subscribe').click(function() {
+				jQuery('#subscribe').each(function() {
+					this.reset();
+				});
+				jQuery('#success_mesg').hide();
+                                jQuery('#warning_mesg').hide();	
+			});		
+		});
+	
+	</script>
+</head>
 	<body>
-		<h1>Welcome to Sindeo</h1>
-			<p>We are in construction phase. Please drop in your email and will get back to you when its ready.</p>
-		<div style="border:1px solid black; width=100px">
-  			<p>Screencast goes here</p>
+
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<a class="brand" href="#">Sindeo</a>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>						
+					</ul>
+				</div>
+			</div>
+		</div>	
+
+		<div class="container">
+
+		<div class="hero-unit">
+			<h1 align="center">Sindeo</h1>
+			<p align="center"><span style="font-size: 32px; line-height: 38px;"><em><span style="font-family: georgia,serif;">Enterprise Knowledge Made Simple </span></em></span></p>
+			<div id="headline">
+				<ul>
+					<li><span>Search and Share information</span></li>
+					<li><span>Communities around Projects/People</span></li>
+				</ul>
+			</div>
+
+			<p align="right"><a class="btn primary large" href="http://sindeo.wordpress.com">Learn more &raquo;</a></p>
 		</div>
-		{% if form.errors %}
-			<p style="color: red;">
-				Please correct the error {{ form.errors|pluralize}} below.
-			</p>
-		{% endif %}
-		<form action="/subscribe/" method="post">
-			<table>
-				{{ form.as_table }}
-			</table>
-			<input type="submit" value="submit"/>
-		</form>	
+		<div class="row">
+			<div class="span7">
+				<iframe src="http://www.screenr.com/embed/ra3s" width="465" height="420" frameborder="0"></iframe>
+			</div>
+			<div class="span8" style="padding-left: 55px"> 
+				<div class="sub-hero-unit">
+				<em><p class="font1">	
+					Sign up and we will keep you posted and even offer you a free trial
+				</p></em>
+				<h6>Any feedback is appreciated!</h6>
+				<div class="alert-message success" id="success_mesg" style="display:none"> 
+        				<p id="success_raw" />
+      				</div>
+				<div class="alert-message warning" id="warning_mesg" style="display:none">
+                                        <ul id="warning_raw" />
+                                </div>
+				<form action="#" method="post" id="subscribe">
+					<table>
+						{{ form.as_table }}
+					</table>
+					<input type="submit" class="btn primary" value="Submit" id="send_subscribe"/>
+					<input type="button" class="btn" value="Reset" id="reset_subscribe" />
+				</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p class="copyright">&copy; Sindeo 2011</p>		
+		</footer>
+		</div>
 	</body>
 </html>

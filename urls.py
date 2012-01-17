@@ -1,5 +1,6 @@
 from django.conf.urls.defaults import patterns, include, url
 from sindeo import views
+from sindeo import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -21,4 +22,5 @@ urlpatterns = patterns('',
 	(r'^search/$', views.search),
 	(r'^subscribe/$', views.subscribe),
 	(r'^subscribe/thanks/$', views.thanku),
+	(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 )
