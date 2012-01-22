@@ -892,6 +892,7 @@ table .headerSortUp.purple, table .headerSortDown.purple { background-color:#e2d
   font-size:20px;
   font-weight:200;
   line-height:1;
+  font-family: 'NunitoBold', Arial, sans-serif;  
 }
 .topbar p {
   margin:0;
@@ -1861,9 +1862,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
  font-family:arial, helvetica, sans-serif;
 }
 .font1 {
- font-family: georgia,sans-serif; 
- font-size:20px;
+ font-family: 'NunitoRegular' georgia,sans-serif; 
+ font-size:15px;
  line-height: 24px;
+ letter-spacing:0;
 }
 
 #headline ul {
