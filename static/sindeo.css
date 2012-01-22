@@ -1153,10 +1153,11 @@ a.menu:after, .dropdown-toggle:after {
   padding:0 15px;
   margin-right:2px;
   line-height:34px;
-  border:1px solid transparent;
+  border:1px solid #ddd;
   -webkit-border-radius:4px 4px 0 0;
   -moz-border-radius:4px 4px 0 0;
   border-radius:4px 4px 0 0;
+  background: #f5f5f5;
 }
 .tabs > li > a:hover {
   text-decoration:none;
@@ -1164,7 +1165,7 @@ a.menu:after, .dropdown-toggle:after {
   border-color:#eeeeee #eeeeee #dddddd;
 }
 .tabs .active > a, .tabs .active > a:hover {
-  color:#808080;
+  color: #111; 
   background-color:#ffffff;
   border:1px solid #dddddd;
   border-bottom-color:transparent;

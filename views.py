@@ -24,6 +24,8 @@ def subscribe(request):
 def thanku(request):
 	return render_to_response('thanku.html')
 
+def home_page(request):
+	return render_to_response('sindeo-homepage.html')
 
 def hours_ahead(request, offset):
 	try:
