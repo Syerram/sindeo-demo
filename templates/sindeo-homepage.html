@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sindeo | Home Page</title>
+<link href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="http://jasny.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap-twipsy.js"></script>
+<script type="text/javascript" src="bootstrap-popover.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a[rel=dac-ti-comment-popover]")
+			.popover({
+				offset: 10
+			})
+			.click(function(e) {
+				e.preventDefault()
+			})
+	});
+	$(document).ready(function() {
+		$("a[rel=dac-ti-mem-popover]")
+			.popover({
+				offset: 10
+			})
+			.click(function(e) {
+				e.preventDefault()
+			})
+	});
+	$(document).ready(function() {
+		$(function () {
+              $("a[rel=twipsy]").twipsy({
+                live: true
+              })
+            })
+		$("a[rel=twipsy]").twipsy('show');
+	});
+
+</script>
+
+<style type="text/css">
+	.col1,.col2 {
+		/*margin: 0 10px;*/
+		background: #fff;
+		height: 525px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		border: 1px solid #CECECE;
+		padding-bottom: 10px;
+		-webkit-box-shadow: 5px 5px 15px 0px #ccc;
+		-moz-box-shadow: 5px 5px 15px 0px #ccc;
+		box-shadow: 5px 5px 15px 0px #ccc;
+	}
+	.portlet {
+		width: 90%;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		border: 1px solid #999;
+		padding: 10px 10px 0px 10px;
+		clear:both;
+		background:#FFF;
+	}
+	#linksonworkspace {
+		width: 200px;
+	}
+	#linksonworkspace li{
+		display: inline;
+		list-style-type: none;
+		padding-right: 10px;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:x-small;
+	}
+	a:link {
+		color:#000000;
+		text-decoration: none;	
+	}
+	a:visited {
+		color:#000000;
+		text-decoration: none;	
+	}
+	
+	.pills > li > span {
+	  padding: 0 10px;
+	  color: #000000;
+	  margin: 5px 3px 5px 0;
+	  line-height: 40px;
+	  text-shadow: 0 1px 1px #ffffff;
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  background-color: #f5f5f5;
+	  display:inline-block;
+	}
+	.pills > li > span:hover {
+	  color: #ffffff;
+	  text-decoration: none;
+	  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	  background-color: #00438a;
+	}
+	.pills .active > span {
+	  color: #ffffff;
+	  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	  background-color: #0069d6;
+	}
+	
+	.data-bubble {
+		padding: 5px;
+		color: #000000;
+		text-shadow: 0 1px 1px #ffffff;
+	  	-webkit-border-radius: 15px;
+	  	-moz-border-radius: 15px;
+	  	border-radius: 15px;
+	  	background-color:#666;	
+		color:#CCCCCC;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:11px;
+	}
+	
+
+</style>
+
+</head>
+<body style="padding-top:40px">
+	<div class="topbar">
+			<div class="topbar-inner">
+				<div class="container">
+					<a class="brand" href="#">Sindeo</a>
+					<ul class="nav">
+						<li class="active"><a href="#"><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/home.png" alt="" width="16" height="16"></a></li>					
+					</ul>
+                    <ul class="nav secondary-nav">
+						<li class="active"><a href="#">
+                        	<img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/sign-in.png" alt="" width="16" height="16">
+                        </a></li>					
+					</ul>
+				</div>
+			</div>
+	</div>
+    <div class="container" style="padding-top:10px">
+        <div class="row" style="padding-left:50px">
+            <div class="span7 col1">
+            	<section><img style="float: right; padding:10px;"
+                	src="../Downloads/1327184338_full-screen.png" width="16px" height="16px" />
+                <h2 style="padding-left:10px">My Workspaces</h2>
+                	<p  style="padding-left:10px; font-size:smaller">2 following, 2 contributions  &amp; 1 author</p>
+				</section>
+                <hr/>                
+                <section style="padding-left:10px">
+                    <div class="portlet" style="display:block">
+                    	<img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/feed.png" style="float:right" />
+                        <img src="../Downloads/lab.png" style="width:16px; height:16px; float:left; padding-right:5px" />
+                        <p>DAC TI Research</p>
+						<hr/>
+                        <ul id="linksonworkspace">
+                        	<li><a href="#" rel="dac-ti-mem-popover" title="Members" data-content="11 active members, 2 observing"><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/customers.png"/> 11</a></li>
+                            <li><a href="#" rel="dac-ti-comment-popover" title="Comments" data-content="120 total comments, 5 new"><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/comment.png" /> 5</a></li>
+                            <li><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/document-library.png"/> 5</li>
+                        </ul>
+					</div>
+				</section>
+                <section style="padding-left:10px; padding-top:10px">
+                    <div class="portlet" style="display:block">
+                    	<img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/feed.png" style="float:right" />
+                        <img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/current-work.png" style="float:right" />
+                        
+                        <img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/collaboration.png" style="width:16px; height:16px; float:left; padding-right:5px" />
+                        <p>HI Frequency Testing</p>
+						<hr/>
+                        <ul id="linksonworkspace">
+                        	<li><a href="#" rel="dac-ti-mem-popover" title="Members" data-content="11 active members, 2 observing"><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/customers.png"/> 2</a></li>
+                            <li><a href="#" rel="dac-ti-comment-popover" title="Comments" data-content="120 total comments, 5 new"><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/comment.png" /> 1</a></li>
+                            <li><img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/document-library.png"/> 1</li>
+                        </ul>
+					</div>
+				</section>
+                <section style="padding-top:175px">
+                	<ul class="tabs">
+                    	<li class="active"><a href="#">Mine</a></li>	
+                        <li><a href="#">Following</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="span7 col2">
+            	<img style="float: right; padding:10px;"
+                	src="../Downloads/1327184338_full-screen.png" width="16px" height="16px" />
+                <section style="padding-left:10px"><h2>My Private Space</h2>
+                	<p>&lt;status quo go here&gt;</p>
+                </section>
+                <hr/>
+                <section style="padding-left:10px;">
+                	<div class="portlet">
+                    	<img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/feed.png" style="float:right" />
+                        <p>Content</p>
+						<hr/>
+						<ul class="pills">
+                            <li><span><span class="data-bubble">45</span>&nbsp;Documents</span></li>
+                            <li><span><span class="data-bubble">25</span>&nbsp;Bookmarks</span></li>
+                            <li><span><span class="data-bubble">2</span>&nbsp;Discussions</span></li>
+                            <li><span><span class="data-bubble">5</span>&nbsp;Q/A</span></li>
+						</ul>
+					</div>
+				</section>
+                
+                <section style="padding-left:10px;padding-top:10px">
+                	<div class="portlet" style="display:block">
+                    	<img src="../Downloads/pc.de-dortmund-icon-pack/dortmund-16x16/feed.png" style="float:right" />
+                        <p>Members<a href="#" id="active-members" rel="twipsy" data-placement="right" title="active members shown"/>&nbsp;</a></p>
+						<hr/>
+						<ul class="pills">
+                            <li><span><span class="data-bubble">5</span>&nbsp;Schrute</span></li>
+                            <li><span><span class="data-bubble">6</span>&nbsp;Halpert</span></li>
+						</ul>
+                        <p class="muted" style="font-size:x-small">showing most active members only</p>
+					</div>
+                </section>
+                <section style="padding-top:40px">
+                	<ul class="tabs">
+                    	<li class="active"><a href="#">Content & Members</a></li>	
+                        <li><a href="#">Tags</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+		<footer>
+			<p class="copyright">&copy; Sindeo 2011</p>		
+		</footer>       
+	</div>    
+</body>
+</html>

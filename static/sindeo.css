@@ -1878,8 +1878,16 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 
 #headline ul li span {
 	text-decoration: none;
-	padding: .2em 1em;
+	padding: 1em;
 	color: rgb(98, 98, 98);
 	font-size: 16px;
 	font-family: arial,helvetica,sans-serif;
+	font-weight: 200;
+}
+
+.border-li {
+	border-right-style: dotted;
+	border-color: rgb(98, 98, 98);
+	border-width:thin;	
+
 }
