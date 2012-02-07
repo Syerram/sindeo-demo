@@ -67,12 +67,12 @@
 		background:#FFF;
 	}
 	#linksonworkspace {
-		width: 200px;
+		width: 90%;
 	}
 	#linksonworkspace li{
 		display: inline;
 		list-style-type: none;
-		padding-right: 10px;
+		padding-right: 5px;
 		font-family:Tahoma, Geneva, sans-serif;
 		font-size:x-small;
 	}
@@ -153,36 +153,52 @@
 				</section>
                 <hr/>                
                 <section style="padding-left:10px">
-                    <div class="portlet" style="display:block">
-			<img src="/static/filled_star.png" style="float:right;"/>
-                        <img src="/static/lab.png" style="width:16px; height:16px; float:left; padding-right:5px" />
-                        <p>DAC TI Research</p>
-			<p style="font-size:x-small;">Author: Me</p>
-			<hr/>
-                        <ul id="linksonworkspace">
-                        	<li><a href="#" rel="dac-ti-mem-popover" title="Members" data-content="11 active members, 2 observing"><img src="/static/customers.png"/> 11</a></li>
-                            <li><a href="#" rel="dac-ti-comment-popover" title="Comments" data-content="120 total comments, 5 new"><img src="/static/comment.png" /> 5</a></li>
-                            <li><img src="/static/document-library.png"/> 5</li>
-                        </ul>
-					</div>
-				</section>
-                <section style="padding-left:10px; padding-top:10px">
-                    <div class="portlet" style="display:block">
-                    	<img src="/static/feed.png" style="float:right" />
-                        <img src="/static/current-work.png" style="float:right" />
-                        
-                        <img src="/static/collaboration.png" style="width:16px; height:16px; float:left; padding-right:5px" />
-                        <p>HI Frequency Testing</p>
-			<p  style="font-size:x-small;">Author: Schrute</p>			
-			<hr/>
-                        <ul id="linksonworkspace">
-                        	<li><a href="#" rel="dac-ti-mem-popover" title="Members" data-content="11 active members, 2 observing"><img src="/static/customers.png"/> 2</a></li>
-                            <li><a href="#" rel="dac-ti-comment-popover" title="Comments" data-content="120 total comments, 5 new"><img src="/static/comment.png" /> 1</a></li>
-                            <li><img src="/static/document-library.png"/> 1</li>
-                        </ul>
-					</div>
-				</section>
-                <section style="padding-top:120px">
+			<div class="pack1">
+    				<div class="pack-header">
+        				<span class="pack_title">
+	    					<a href="#" title="View Workspace">DAC TI Research</a>
+    						<span class="icons">
+            						<img src="/static/feed.png" style="float:right" />	
+    						</span>
+					</span>
+    				</div>
+               			<div class="pack-body">
+            				<p class="pack_description">Countries of the world and their capital cities</p>
+        			</div>
+    				<div class="pack-footer">
+					<ul id="linksonworkspace">
+						<li style="float:right;"><a href="#" rel="dac-ti-mem-popover" title="Members" data-content="11 active members, 2 observing"><img src="/static/customers.png"/> 2</a></li>
+                            			<li style="float:right;"><a href="#" rel="dac-ti-comment-popover" title="Comments" data-content="120 total comments, 5 new"><img src="/static/comment.png" /> 1</a></li>
+                            			<li style="float:right;"><img src="/static/document-library.png"/> 1</li>
+						<li style="float:left;">Author: Me</li>
+					</ul>			
+        			</div>    				
+			</div>
+		</section>
+                <section style="padding-left:10px; padding-top:5px">
+                	 <div class="pack1">
+                                <div class="pack-header">
+                                        <span class="pack_title">
+                                                <a href="#" title="View Workspace">Hight Frequency Testing</a>
+                                                <span class="icons">
+                                                        <img src="/static/feed.png" style="float:right" />
+                                                </span>
+                                        </span>
+                                </div>
+                                <div class="pack-body">
+                                        <p class="pack_description">Countries of the world and their capital cities</p>
+                                </div>
+                                <div class="pack-footer">
+                                        <ul id="linksonworkspace">
+                                                <li style="float:right;"><a href="#" rel="dac-ti-mem-popover" title="Members" data-content="11 active members, 2 observing"><img src="/static/customers.png"/> 2</a></li>
+                                                <li style="float:right;"><a href="#" rel="dac-ti-comment-popover" title="Comments" data-content="120 total comments, 5 new"><img src="/static/comment.png" /> 1</a></li>
+                                                <li style="float:right;"><img src="/static/document-library.png"/> 1</li>
+                                                <li style="float:left;">Author: schrute</li>
+                                        </ul>
+                                </div>
+                        </div>		
+		</section>
+		<section style="padding-top:180px">
                 	<ul class="tabs" style="padding-left:5px">
                     	<li class="active"><a href="#">Mine</a></li>	
                         <li><a href="#">Following</a></li>
@@ -196,36 +212,44 @@
                 	<p>&nbsp;</p>
                 </section>
                 <hr/>
-                <section style="padding-left:10px;">
-                	<div class="portlet">
-                    	<img src="/static/feed.png" style="float:right" />
-                        <p>Content</p>
-						<hr/>
-						<ul class="pills">
-                            <li><span><span class="data-bubble">45</span>&nbsp;Documents</span></li>
-                            <li><span><span class="data-bubble">25</span>&nbsp;Bookmarks</span></li>
-                            <li><span><span class="data-bubble">2</span>&nbsp;Discussions</span></li>
-                            <li><span><span class="data-bubble">5</span>&nbsp;Q/A</span></li>
-						</ul>
-					</div>
-				</section>
-                
-                <section style="padding-left:10px;padding-top:10px">
-                	<div class="portlet" style="display:block">
-                    	<img src="/static/feed.png" style="float:right" />
-                        <p>Members<a href="#" id="active-members" rel="twipsy" data-placement="right" title="active members shown"/>&nbsp;</a></p>
-						<hr/>
-						<ul class="pills">
-                            <li><span><span class="data-bubble">5</span>&nbsp;Schrute</span></li>
-                            <li><span><span class="data-bubble">6</span>&nbsp;Halpert</span></li>
-						</ul>
-                        <p class="muted" style="font-size:x-small">showing most active members only</p>
-					</div>
-                </section>
-                <section style="padding-top:40px">
+		<section style="padding-left:10px;">
+			<div class="pack1">
+                                <div class="pack-header">
+                                        <span class="pack_title">
+                                                <a href="#" title="View All Content">Content</a>
+                                        </span>
+                                </div>
+                                <div class="pack-body">
+                                	<ul class="pills">
+                            			<li><span style="font-size:x-small;"><img src="/static/library.png" style="vertical-align:middle;padding-right:5px;"/>45</span></li>
+                            			<li><span style="font-size:x-small;"><img src="/static/bookmark.png" style="vertical-align:middle;padding-right:5px;"/>25</span></li>
+						<li><span style="font-size:x-small;"><img src="/static/lightbulb.png" style="vertical-align:middle;padding-right:5px;"/>2</span></li>
+						<li><span style="font-size:x-small;"><img src="/static/customers.png" style="vertical-align:middle;padding-right:5px;"/>5</span></li>
+                                        </ul>
+				</div>
+                        </div>
+
+		</section>
+                <section style="padding-left:10px;padding-top:5px">
+                	 <div class="pack1">
+                                <div class="pack-header">
+                                        <span class="pack_title">
+                                                <a href="#" title="View Membres">Members</a>
+                                        </span>
+                                </div>
+                                <div class="pack-body">
+                                        <ul class="pills">
+                                                <li><span>Schrute&nbsp;<span style="font-size:x-small;">5</span></span></li>
+                                                <li><span>Halpert&nbsp;<span style="font-size:x-small;">10</span></span></li>
+                                        </ul>
+                                </div>
+                        </div>
+
+		</section>
+		<section style="padding-top:150px">
                 	<ul class="tabs" style="padding-left:5px" >
-                    	<li class="active"><a href="#">Content & Members</a></li>	
-                        <li><a href="#">Tags</a></li>
+                    	<li class="active"><a href="#">My Content & Tags</a></li>	
+                        <li><a href="#">Members</a></li>
                     </ul>
                 </section>
             </div>
